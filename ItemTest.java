@@ -1,5 +1,3 @@
-package com.kitri.awt.design;
-
 import java.awt.*;
 
 public class ItemTest extends Frame {
@@ -10,9 +8,16 @@ public class ItemTest extends Frame {
 //	pN 들어가야하는 것 
 	CheckboxGroup mor = new CheckboxGroup();
 	Checkbox app = new Checkbox("사과", true);
-	Checkbox bnn = new Checkbox("바나나");
-	Checkbox str = new Checkbox("딸기");
+	Checkbox banana = new Checkbox("바나나");
+	Checkbox straw = new Checkbox("딸기");
 
+	/*
+	 CheckboxGroup ch new CheckboxGroup();
+	 Checkbox mor = new Checkbox("아침", cg, true);
+	 Checkbox aft = new Checkbox("점심", cg, flase);
+	 Checkbox eve = new Checkbox("저녁", cg, false);	 
+	 */
+	
 	//	가운데 TextArea생성	
 	TextArea ta = new TextArea();
 	
@@ -32,8 +37,8 @@ public class ItemTest extends Frame {
 		pN.add(new Checkbox("점심", mor, false));
 		pN.add(new Checkbox("저녁", mor, false));
 		pN.add(app);
-		pN.add(bnn);
-		pN.add(str);
+		pN.add(banana);
+		pN.add(straw);
 		
 		
 //		sP에 choice와 버튼 작성하기
@@ -51,7 +56,7 @@ public class ItemTest extends Frame {
 		add(ta, "Center");
 		add(pS, "South");
 		
-		setBounds(300, 200, 300, 400);
+		setBounds(300, 200, 300, 500);
 		setVisible(true);
 		
 	}

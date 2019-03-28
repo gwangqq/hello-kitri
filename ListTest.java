@@ -2,6 +2,8 @@ package com.kitri.awt.design;
 
 import java.awt.*;
 
+
+
 public class ListTest extends Frame{
 //		선언부
 	Panel pW = new Panel();
@@ -30,14 +32,15 @@ public class ListTest extends Frame{
 //		판넬에 기능 구현
 //		pL에 기능 삽입
 
-		pW.setLayout(new BorderLayout());
+		pW.setLayout(new BorderLayout(0,10));
 		pW.add(listL, "Center");
 		pW.add(tfL, "South");
 //		
 
 //		pC에 기능 삽입
 //		
-		pC.setLayout(new GridLayout(4, 1 , 0, 10));
+		pC.setLayout(new GridLayout(6, 1 , 10, 10));
+		pC.add(new Label(" "));
 		pC.add(btR);
 		pC.add(btRAll);
 		pC.add(btL);
@@ -45,12 +48,19 @@ public class ListTest extends Frame{
 		
 
 //		pE에 기능 삽입
-		pE.setLayout(new BorderLayout());
+		pE.setLayout(new BorderLayout(0,10));
 		pE.add(listR, "Center");
 		pE.add(tfR, "South");
 		
 //		전체 layout 설정
-		
+		/*
+		 * setLayout(new GridLayout(1,3,10,0);
+		 * add(pW);
+		 * add(pC);
+		 * add(pE);
+		 * setBounds(300, 200, 300, 400);
+		 * setVisible(true);
+		 */
 		setLayout(new BorderLayout());
 		add(pW, "West");
 		add(pC, "Center");
